@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title> Динамічний список</title>
+</head>
+<body>
+
+<h2>Динамічне створення та сортування списку</h2>
+
+<input type="text" id="itemInput" placeholder="Введіть значення">
+<button id="addBtn">Додати</button>
+<button id="sortBtn">Сортувати за алфавітом</button>
+<p id="errorMsg" style="color:red;"></p>
+<ul id="list"></ul>
+
+<script>
+  const input   = document.getElementById("itemInput");
+  const addBtn  = document.getElementById("addBtn");
+  const sortBtn = document.getElementById("sortBtn");
+  const list    = document.getElementById("list");
+  const errorMsg = document.getElementById("errorMsg");
+
+  // Масив для зберігання елементів
+  let items = [];
+
+  // Відмальовує список на основі масиву items
+  function renderList() {
+    list.innerHTML = "";
+    items.forEach((text, index) => {
+      const li = document.createElement("li");
+      li.textContent = text;
+      li.style.cursor = "pointer";
+      // Клік по елементу — видаляє його
+      li.addEventListener("click", () => {
+        items.splice(index, 1);
+        renderList();
+      });
+      list.appendChild(li);
+    });
+  }
+
+  // Додавання нового елемента
+  addBtn.addEventListener("click", () => {
+    const value = input.value.trim();
+
+    // Перевірка: поле не повинно бути порожнім
+    if (!value) {
+      errorMsg.textContent = "Поле введення не може бути порожнім.";
+      return;
+    }
+
+    errorMsg.textContent = "";
+    items.push(value);
+    input.value = "";
+    renderList();
+  });
+
+  // Додавання по Enter
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") addBtn.click();
+  });
+
+  // Сортування за алфавітом
+  sortBtn.addEventListener("click", () => {
+    if (items.length === 0) {
+      errorMsg.textContent = "Список порожній — нічого сортувати.";
+      return;
+    }
+    errorMsg.textContent = "";
+    items.sort((a, b) => a.localeCompare(b, "uk"));
+    renderList();
+  });
+</script>
+
+</body>
+</html>

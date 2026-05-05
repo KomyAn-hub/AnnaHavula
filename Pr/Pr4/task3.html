@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Таймер</title>
+</head>
+<body>
+
+<h2>Таймер</h2>
+
+<label>Введіть час (секунди):
+  <input type="number" id="timeInput" min="1" placeholder="наприклад, 60">
+</label>
+
+<p id="display">00:00</p>
+<p id="message"></p>
+
+<button id="startBtn">Старт</button>
+<button id="pauseBtn">Пауза</button>
+<button id="incBtn">+10 с</button>
+<button id="decBtn">−10 с</button>
+
+<script>
+  const timeInput = document.getElementById("timeInput");
+  const display   = document.getElementById("display");
+  const message   = document.getElementById("message");
+  const startBtn  = document.getElementById("startBtn");
+  const pauseBtn  = document.getElementById("pauseBtn");
+  const incBtn    = document.getElementById("incBtn");
+  const decBtn    = document.getElementById("decBtn");
+
+  let remaining = 0;  
+  let intervalId = null;
+  let running = false;
+
+  function format(sec) {
+    const m = Math.floor(sec / 60).toString().padStart(2, "0");
+    const s = (sec % 60).toString().padStart(2, "0");
+    return `${m}:${s}`;
+  }
+
+  function updateDisplay() {
+    display.textContent = format(remaining);
+  }
+
+  function stopInterval() {
+    clearInterval(intervalId);
+    intervalId = null;
+    running = false;
+  }
+
+  startBtn.addEventListener("click", () => {
+    message.textContent = "";
+
+    if (running) return;
+
+    if (remaining === 0) {
+      const val = parseInt(timeInput.value, 10);
+
+      if (isNaN(val) || val <= 0) {
+        message.textContent = "Помилка: введіть додатнє ціле число.";
+        return;
+      }
+      remaining = val;
+      updateDisplay();
+    }
+
+    running = true;
+    intervalId = setInterval(() => {
+      remaining--;
+      updateDisplay();
+
+      if (remaining <= 0) {
+        stopInterval();
+        display.textContent = "00:00";
+        message.textContent = "⏰ Час вийшов!";
+      }
+    }, 1000);
+  });
+
+  pauseBtn.addEventListener("click", () => {
+    if (running) {
+      stopInterval();
+    }
+  });
+
+  incBtn.addEventListener("click", () => {
+    remaining += 10;
+    updateDisplay();
+  });
+
+  decBtn.addEventListener("click", () => {
+    remaining = Math.max(0, remaining - 10);
+    updateDisplay();
+    if (remaining === 0 && running) {
+      stopInterval();
+      message.textContent = " Час вийшов!";
+    }
+  });
+</script>
+
+</body>
+</html>
