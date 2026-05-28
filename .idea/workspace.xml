@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="56c9b116-f78b-4358-81e9-1090242623b8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Pr11/sql_project/practical_sql_shop.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pr13/api.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pr13/htaccess.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pr13/posts.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pr14/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pr9/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestAPI/users-api/my.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="PHP File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3CO69s9dX4QjA52OkjgPqtXDH2J" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "PHP Script.ефіл2.php.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "pr",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\VS\pr" />
+      <recent name="D:\VS\pr\RestAPI\users-api" />
+      <recent name="D:\VS\pr\1task" />
+    </key>
+  </component>
+  <component name="RunManager" selected="PHP Script.ефіл2.php">
+    <configuration name="ефіл2.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/ефіл2.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="task1.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/task1.php">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.ефіл2.php" />
+        <item itemvalue="PHP Script.task1.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-PS-261.24374.185" />
+        <option value="bundled-php-predefined-a98d8de5180a-6bbb74dbab74-com.jetbrains.php.sharedIndexes-PS-261.24374.185" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="56c9b116-f78b-4358-81e9-1090242623b8" name="Changes" comment="" />
+      <created>1776244124459</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1776244124459</updated>
+      <workItem from="1776244125355" duration="4616000" />
+      <workItem from="1777464387549" duration="1707000" />
+      <workItem from="1777548485427" duration="2282000" />
+      <workItem from="1778055707879" duration="3898000" />
+      <workItem from="1778435999318" duration="1993000" />
+      <workItem from="1779990633825" duration="1661000" />
+      <workItem from="1779992919014" duration="1007000" />
+      <workItem from="1779994202704" duration="1142000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
